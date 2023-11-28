@@ -1,0 +1,22 @@
+.item{
+  &__header{
+    display: flex;
+    gap: 4%;
+  }
+  &__img{
+    width: 60px;
+    height: 63px
+  }
+  &__tags{
+    display: flex;
+    gap: 2%;
+    &__price{
+      color: #096923;
+    }
+  }
+  border-radius: 2rem;
+  padding: 4%;
+  margin-bottom: 2%;
+  background-color: #d1d1d1;
+  cursor: pointer;
+}

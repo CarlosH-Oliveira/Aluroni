@@ -1,0 +1,58 @@
+.orderer {
+    border-bottom-left-radius: 2rem;
+    padding-left: 2%;
+    height: 3rem;
+    justify-content: space-between;
+    display: flex;
+    border: none;
+    align-items: center;
+    background-color: #606060;
+    color: #fff;
+    &__title {
+        margin-right: 1em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &__icon{
+            width: 15px;
+            margin-right: 1em ;
+            cursor: pointer;
+        }
+    }
+    &__options {
+        opacity: 0%;
+        display: flex;
+        transition: all ease 0.6s;
+        &__active {
+            display: flex;
+            transition: all ease 0.6s;
+        }
+    }
+    &__option {
+        padding: 0.4rem;
+        height: 2rem;
+        margin-right: 2%;
+        border-radius: 1rem;
+        align-items: center;
+        background-color: #606060;
+        display: flex;
+        justify-content: center;
+        width: inherit;
+        cursor: pointer;
+        &:hover, &__active {
+            padding: 0.4rem;
+            height: 2rem;
+            margin-right: 2%;
+            border-radius: 1rem;
+            align-items: center;
+            background-color: #303030;
+            display: flex;
+            justify-content: center;
+            width: inherit;
+            cursor: pointer;
+            cursor: pointer;
+        color: white;
+        }
+    }
+}
