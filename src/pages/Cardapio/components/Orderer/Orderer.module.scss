@@ -22,11 +22,9 @@
     }
     &__options {
         opacity: 0%;
-        display: flex;
-        transition: all ease 0.6s;
+        display: none;
         &__active {
             display: flex;
-            transition: all ease 0.6s;
         }
     }
     &__option {
@@ -39,7 +37,6 @@
         display: flex;
         justify-content: center;
         width: inherit;
-        cursor: pointer;
         &:hover, &__active {
             padding: 0.4rem;
             height: 2rem;
@@ -50,8 +47,6 @@
             display: flex;
             justify-content: center;
             width: inherit;
-            cursor: pointer;
-            cursor: pointer;
         color: white;
         }
     }

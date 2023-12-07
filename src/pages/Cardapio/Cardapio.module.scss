@@ -6,6 +6,9 @@
         opacity: 0%;
         height: 0;
     }
+    &__totalHidden{
+        display: none;
+    }
     &__menu{
         padding-left: 3%;
         gap: 1.5%;
@@ -35,18 +38,19 @@
 
 .header{
     &__text{
-        font-size: 220%;
-        padding-top: 3%;
-        padding-bottom: 3%;
-        border-radius: 2rem;
+        font-size: 350%;
         text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-        border: 5px solid #ffffff;
+        width: 30vh;
+        padding: 1%;
+        padding-right: 20%;
+        padding-left: 2%;
         color: #ffffff;
+        border: 2px solid #fff;
+        border-radius: 1rem;
     }
-    padding: 5%;
-    margin-bottom: 3%;
+    padding: 1%;
+    margin-bottom: 1%;
     height: auto;
-    text-align: center;
     background-image: url("https://wallpapersmug.com/u/ebde76/delicious-pizza-food.jpg");
     background-size: cover;
     background-position: center;
@@ -71,6 +75,6 @@
     margin-bottom: 2%;
     display: flex;
     align-items: center;
-    background-color: #d1d1d1;
+    background-color: #e4e4e4;
 }
 

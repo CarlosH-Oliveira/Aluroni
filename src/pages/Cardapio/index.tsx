@@ -15,10 +15,18 @@ export default function Cardapio () {
     useEffect(function(){
         console.log(orderer)
     }, [orderer])
+
+    useEffect(function(){
+        console.log(filter)
+    }, [filter])
+
+    useEffect(function(){
+        console.log(searchText)
+    }, [searchText])
     
     useEffect(function(){
         const scrollListener = () =>{
-          if(window.scrollY > 150){
+          if(window.scrollY > 100){
             setBlockHeader("header")
           }else{
             setBlockHeader("hidden")
@@ -54,7 +62,7 @@ export default function Cardapio () {
                     </div>
                 </section>
                 <Orderer orderer={orderer} setOrderer={setOrderer}/>
-                <Itens />
+                <Itens searchText={searchText} filter={filter} orderer={orderer}/>
             </main>
         </>
     )
