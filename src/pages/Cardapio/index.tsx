@@ -45,7 +45,7 @@ export default function Cardapio () {
             <nav className={styles.navBar}>
                 <div className={blockHeader==="hidden"?styles.navBar__hidden:styles.navBar__menu}>
                     <img src="https://static.vecteezy.com/system/resources/previews/021/495/996/original/chatgpt-openai-logo-icon-free-png.png" alt="..." className={blockHeader==="hidden"?styles.navBar__hidden:styles.navBar__logo}/>
-                    <text className={blockHeader==="hidden"?styles.navBar__hidden:styles.navBar__title}>Aluroni</text>
+                    <span className={blockHeader==="hidden"?styles.navBar__hidden:styles.navBar__title}>Aluroni</span>
                 </div>
             </nav>
             <header className={styles.header}>
@@ -55,7 +55,7 @@ export default function Cardapio () {
             </header>
             <main className={styles.main}>
                 <section className={styles.menu}>
-                    <text className={styles.menu__title}>Menu</text>
+                    <span className={styles.menu__title}>Menu</span>
                     <Finder searchText={searchText} setSearchText={setSearchText}/>
                     <div className={styles.menu__filters}>
                         <Filters filter={filter} setFilter={setFilter}/>
