@@ -1,0 +1,46 @@
+.header{
+    &__text{
+        font-size: 350%;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        width: 30vh;
+        padding: 1%;
+        padding-right: 20%;
+        padding-left: 2%;
+        color: #ffffff;
+        border: 2px solid #fff;
+        border-radius: 1rem;
+    }
+    @media screen and (max-width:600px) {
+        &__text{
+            font-size: 280%;
+        }
+    }
+    @media screen and (min-width:600px) {
+        &__text{
+            font-size: 280%;
+        } 
+    }
+    @media screen and (min-width:768px) {
+        &__text{
+            font-size: 310%;
+        }  
+    }
+    @media screen and (min-width:992px) {
+        &__text{
+            font-size: 350%;
+        } 
+    }
+    display: flex;
+    padding: 1%;
+    height: auto;
+    background-image: url("https://wallpapersmug.com/u/ebde76/delicious-pizza-food.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+    .header{
+        justify-content: center;
+    }
+}

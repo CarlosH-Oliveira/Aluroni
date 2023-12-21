@@ -1,0 +1,19 @@
+.finder{
+    &__input{
+        border-radius: 2rem;
+        border: 0px;
+        width: 40vw;
+        padding: 3%;
+    }
+    &__input::placeholder{
+        font-size: 90%;
+        font-style: italic;
+        font-weight: lighter;
+    }
+    &__icon{
+        margin-left: 2%;
+    }
+    align-items: center;
+    display: flex;
+}
+

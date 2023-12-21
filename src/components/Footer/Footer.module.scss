@@ -1,0 +1,16 @@
+.footer{
+    padding: 2%;
+    margin-top: 10%;
+    background-color: #202020;
+    color: #fff;
+    bottom: 0;
+    &__container{
+        padding: 1%;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        width: 30%;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}

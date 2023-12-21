@@ -1,0 +1,193 @@
+
+.main{
+    height: auto;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .container {
+    margin-top: 1.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    width: 60vw;
+    height:min-content;
+    border-radius: 2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .image {
+    width: 400px;
+    img {
+      border-radius: 2rem;
+      width: 100%;
+    }
+  }
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    &__description {
+      width: 80%;
+      color: #505050;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    &____details {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  $massas: #d73b3b;
+  $carnes: #30201e;
+  $combos: #e6c864;
+  $veganos: #80aa40;
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    max-width: 700px;
+    @media (max-width: 1200px) {
+      justify-content: flex-end;
+    }
+    @media (max-width: 600px) {
+      justify-content: flex-start;
+    }
+  div {
+      margin: 10px;
+    }
+    &__type {
+      align-items: center;
+      border-radius: 2px;
+      display: flex;
+      font-weight: bold;
+      height: 40px;
+      justify-content: center;
+      padding: 10px 30px;
+      &__massas, &__carnes, &__combos, &__veganos{
+        padding: 1rem;
+        border-radius: 2rem;
+      }
+      &__massas {
+        background-color: $massas;
+        color: white;
+      }
+      &__carnes {
+        background-color: $carnes;
+        color: white;
+      }
+      &__combos {
+        background-color: $combos;
+      }
+      &__veganos {
+        background-color: $veganos;
+      }
+    }
+    &__portion,
+    &__serving,
+    &__price {
+      align-items: center;
+      display: flex;
+      font-size: 1.25rem;
+      font-weight: bold;
+      justify-content: center;
+    }
+    &__price {
+      color: #ff5252;
+      font-size: 1.7rem;
+    }
+  }
+
+  @media screen and (max-width:600px){
+    .title {
+      text-align: center;
+      font-size: 1.7rem;
+    }
+    .image {
+      width: 200px;
+    }
+    .tags{
+      flex-flow: column;
+      &__type {
+        &__massas {
+          text-align: center;
+        }
+      }
+    }
+}
+
+@media screen and (min-width:600px){
+  .title {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .image {
+    width: 250px;
+  }
+  .tags{
+    flex-flow: column;
+    &__type {
+      &__massas {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:768px){
+  .title {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .image {
+    width: 300px;
+  }
+  .tags{
+    flex-flow: row;
+    &__type {
+      &__massas {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:992px){
+  .title {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .image {
+    width: 350px;
+  }
+  .tags{
+    &__type {
+      &__massas {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1200px){
+  .title {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .image {
+    width: 400px;
+  }
+  .tags{
+    &__type {
+      &__massas {
+        text-align: center;
+      }
+    }
+  }
+}
