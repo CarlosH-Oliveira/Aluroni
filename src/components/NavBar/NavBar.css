@@ -1,8 +1,9 @@
 .navBar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-left: 1rem;
+    gap: 3rem;
+    width: 100vw;
 }
 
 .navBar__main{
@@ -15,7 +16,7 @@
     height: 55px;
 }
 
-.navBar__title{
+.navBar__title, .navBar__link{
     font-size: 1.2rem;
 }
 
@@ -23,18 +24,16 @@
     display: flex;
     gap: 2rem;
     align-items: center;
-    margin-left: 1rem;
 }
 
 .navBar__link{
     text-decoration: none;
-    font-size: 1.2rem;
     color: #000;
 }
 
-.navBar__return{
+.navBar-return{
     border: 0;
-    font-size: 1.4rem;
+    font-size: 1rem;
     background-color: #f50021;
     color: #fff;
     cursor: pointer;
@@ -43,7 +42,7 @@
 
 @media screen and (min-width: 868px) {
     .navBar{
-        padding-right: 1rem;
+        gap: 12rem;
     }
 
     .navBar__main{
