@@ -1,0 +1,6 @@
+.menu{
+    max-height: 75vh;
+    overflow-y: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

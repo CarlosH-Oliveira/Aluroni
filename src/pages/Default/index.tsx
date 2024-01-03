@@ -1,6 +1,4 @@
 import { FunctionComponent } from "react";
-import styles from "./Default.module.scss";
-import NavBar from "components/NavBar";
 import Header from "components/Header";
 import { Outlet } from "react-router-dom";
 import Footer from "components/Footer";

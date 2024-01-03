@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./Menu.module.scss";
+import "./Menu.css";
 import Finder from "./components/Finder/Index";
 import Filters from "./components/Filters";
 import Orderer from "./components/Orderer";
@@ -25,17 +25,19 @@ export default function Menu () {
 
 	return (
 		<>
-			<main className={styles.main}>
-				<section className={styles.menu}>
-					<span className={styles.menu__title}>Menu</span>
-					<Finder searchText={searchText} setSearchText={setSearchText}/>
-					<div className={styles.menu__filters}>
+			<section className="menu-main">
+				<div className="menu">
+					<div className="search">
+						<span className="menu-title">Menu</span>
+						<Finder searchText={searchText} setSearchText={setSearchText}/>
+					</div>
+					<div className="menu__filters">
 						<Filters filter={filter} setFilter={setFilter}/>
 					</div>
-				</section>
+				</div>
 				<Orderer orderer={orderer} setOrderer={setOrderer}/>
 				<Itens searchText={searchText} filter={filter} orderer={orderer}/>
-			</main>
+			</section>
 		</>
 	);
 }

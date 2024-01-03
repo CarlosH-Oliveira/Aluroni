@@ -1,0 +1,27 @@
+.filters{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.filters__buttonOption{
+    border: 0;
+}
+
+.filters__buttonOptionActive{
+    border: 0;
+    background-color: #f50021;
+    color: #fff;
+}
+
+@media screen and (min-width: 868px) {
+    .filters__buttonOption, .filters__buttonOptionActive{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .filters__buttonOption, .filters__buttonOptionActive{
+        font-size: 1.2rem;
+    }
+}

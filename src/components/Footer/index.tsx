@@ -1,10 +1,10 @@
 import { FunctionComponent } from "react";
-import styles from "./Footer.module.scss";
+import "./Footer.css";
 const Footer: FunctionComponent = () => {
 	return (
 		<>
-			<footer className={styles.footer}>
-				<div className={styles.footer__container}>
+			<footer className="footer">
+				<div className="footer__container">
 					<h2>Rua Comendador Soares</h2>
 					<p>Nova Iguaçu - RJ</p>
 				</div>

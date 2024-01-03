@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./Item.module.scss";
+import "./Item.css";
 import { useNavigate } from "react-router-dom";
 import { dish } from "types/dish";
 
@@ -28,25 +28,25 @@ export default function Item ({item}:props) {
     
 	return (
 		<>
-			<div className={styles.item} onClick={() => details(item)}>
-				<div className={styles.item__main}>
-					<div className={styles.item__header}>
-						<img className={styles.item__img} src={item.photo} alt="..." />
-						<h2 className={styles.item__header__title}>{item.title}</h2>
+			<div className="menu-item" onClick={() => details(item)}>
+				<div className="item__main">
+					<div className="item__header">
+						<img className="menu-item__img" src={item.photo} alt="..." />
+						<h2 className="item__header-title">{item.title}</h2>
 					</div>
-					<div className={styles.item__desc}>
+					<div className="item__desc">
 						<p>{item.description}</p>
-						<div className={styles.item__tags}>
-							<div className={styles.item__tags__type} style={{"backgroundColor":backgroundColor}}>
+						<div className="item-tags">
+							<div className="item-tag type" style={{"backgroundColor":backgroundColor}}>
                             Categoria: {item.category.label}
 							</div>
-							<div className={styles.item__tags__portion}>
+							<div className="item-tag portion">
                             Porção: {item.size} gramas
 							</div>
-							<div className={styles.item__tags__serving}>
+							<div className="item-tag serving">
 								{item.serving > 1?"Serve até "+item.serving+" pessoas":"Serve "+item.serving+" pessoa"}
 							</div>
-							<div className={styles.item__tags__price}>
+							<div className="item-tag price">
                             Preço: {item.price} R$
 							</div>
 						</div>

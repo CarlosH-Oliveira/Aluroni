@@ -1,0 +1,31 @@
+.finder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.finder-input{
+    border: 0;
+}
+
+.finder-input::placeholder{
+    font-style: italic;
+}
+
+@media screen and (min-width: 868px) {
+    .finder-input{
+        width: 40vw;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .finder-input{
+        font-size: 1.3rem;
+    }
+
+    .finder-icon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

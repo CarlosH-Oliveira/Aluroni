@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import itens from "data/menu.json";
-import styles from "./Start.module.scss";
+import "./Start.css";
 import { Link, useNavigate } from "react-router-dom";
 import { dish } from "types/dish";
 
@@ -12,24 +12,20 @@ const Start: FunctionComponent= () => {
 	};
 	return (
 		<>
-			<section className={styles.main}>
-				<h3 className={styles.welcome}>Seja muito bem-vindo à nossa loja!</h3>
-				<div className={styles.title__container}>
-					<h3 className={styles.title}>Recomendações da cozinha </h3>
-					<Link to="/menu" className={styles.title__menu}>Ir para o cardápio</Link>
+			<section className="start-main flex-column">
+				<h2 className="welcome">Seja muito bem-vindo à nossa loja!</h2>
+				<div className="title__container">
+					<h3 className="title">Recomendações da cozinha </h3>
+					<Link to="/menu" className="title__navigate">Ir para o cardápio</Link>
 				</div>
-				<div className={styles.recommended}>
+				<div className="recommended flex-column">
 					{
 						recommendedDishes.map((item:any)=>(
-							<div className={styles.recommended__item} key={item.id}>
-								<div className={styles.recommended__item__img__container}>
-									<img src={item.photo} alt={item.title} className={styles.recommended__item__img}/>
-								</div>
-								<div className={styles.recommended__item__details__container}>
-									<button className={styles.recommended__item__details} onClick={() => {details(item);}}>
+							<div className="item flex-column" key={item.id}>
+								<img src={item.photo} alt={item.title} className="item-img"/>
+								<button className="item__details" onClick={() => {details(item);}}>
 									Ver mais
-									</button>
-								</div>
+								</button>
 							</div>
 						))
 					}

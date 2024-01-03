@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from "react";
 import filters from "data/filters.json";
-import styles from "./Filters.module.scss";
+import "./Filters.css";
 
 type props = {
     filter:number|null,
@@ -11,9 +11,9 @@ export default function Filters ({filter, setFilter}:props) {
 
 	return(
 		<>
-			<div className={styles.filters}>
+			<div className="filters">
 				{filters.map((item:any) => (
-					<button key={item.id} onClick={() => filter === item.id?setFilter(null):setFilter(item.id)} className={filter===item.id?styles.filters__buttonOptionActive:styles.filters__buttonOption}>
+					<button key={item.id} onClick={() => filter === item.id?setFilter(null):setFilter(item.id)} className={filter===item.id?"filters__buttonOptionActive":"filters__buttonOption"}>
 						{item.label}
 					</button>
 				))}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Item from "./components/Item";
 import itens from "data/menu.json";
-import styles from "./Itens.module.scss";
+import "./Itens.css";
 import { menu } from "types/menu";
 
 type props = {
@@ -45,7 +45,7 @@ export default function Itens (props:props) {
 
 	return(
 		<>
-			<div className={styles.menu}>
+			<div className="menu">
 				{
 					itensList.map((item:any, key:any) => (
 						<Item item={item} key={key}/>

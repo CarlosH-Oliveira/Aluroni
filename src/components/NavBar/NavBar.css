@@ -1,0 +1,52 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.navBar__main{
+    display: none;
+    align-items: center;
+}
+
+.navBar__logo{
+    width: 50px;
+    height: 55px;
+}
+
+.navBar__title{
+    font-size: 1.4rem;
+}
+
+.navBar__routes{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navBar__link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.navBar__return{
+    border: 0;
+    font-size: 1.4rem;
+    background-color: #f50021;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 868px) {
+    .navBar{
+        padding-right: 1rem;
+    }
+
+    .navBar__main{
+        display: flex;
+    }
+}
+

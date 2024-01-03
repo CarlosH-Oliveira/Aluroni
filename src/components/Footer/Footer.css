@@ -1,0 +1,11 @@
+.footer{
+    background-color: #252525;
+    padding: 1rem;
+    color: #fff;
+}
+
+.footer__container{
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 1rem;
+}

@@ -1,5 +1,5 @@
 import { FunctionComponent, useEffect, useState } from "react";
-import styles from "./NavBar.module.scss";
+import "./NavBar.css";
 import { Link, useNavigate } from "react-router-dom";
 
 const NavBar: FunctionComponent = () => {
@@ -25,19 +25,19 @@ const NavBar: FunctionComponent = () => {
 
 	return (
 		<>
-			<nav className={styles.navBar}>
-				<div className={styles.navBar__menu}>
-					<img src="https://static.vecteezy.com/system/resources/previews/021/495/996/original/chatgpt-openai-logo-icon-free-png.png" alt="..." className={styles.navBar__logo}/>
-					<span className={styles.navBar__title}>Aluroni</span>
-					<div className={styles.navBar__menu__routes}>
-						{routes.map((route:any) => (
-							<div key={route.label} className={styles.navBar__menu__routes__route}>
-								<Link to={route.to} className={styles.navBar__menu__routes__link}>{route.label}</Link>
-							</div>
-						))}
-						<button onClick={() => navigate(-1)} className={styles.navBar__menu__return}>{"< Voltar"}</button>
-					</div>
+			<nav className="navBar">
+				<div className="navBar__main">
+					<img src="https://static.vecteezy.com/system/resources/previews/021/495/996/original/chatgpt-openai-logo-icon-free-png.png" alt="..." className="navBar__logo"/>
+					<h1 className="navBar__title">Aluroni</h1>
 				</div>
+				<div className="navBar__routes">
+					{routes.map((route:any) => (
+						<div key={route.label} className="navBar__route">
+							<Link to={route.to} className="navBar__link">{route.label}</Link>
+						</div>
+					))}
+				</div>
+				<button onClick={() => navigate(-1)} className="navBar__return">{"< Voltar"}</button>
 			</nav>
 		</>
 	);
