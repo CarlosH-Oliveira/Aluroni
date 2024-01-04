@@ -37,7 +37,7 @@ const NavBar: FunctionComponent = () => {
 						</div>
 					))}
 				</div>
-				<div onClick={() => navigate(-1)} className="navBar-return">Voltar</div>
+				<button onClick={() => navigate(-1)} className="navBar-return">Voltar</button>
 			</nav>
 		</>
 	);
