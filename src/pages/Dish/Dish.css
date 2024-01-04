@@ -28,13 +28,17 @@
 }
 
 .tag{
-  padding: 0.5rem;
   width: 30vw;
 }
 
 @media screen and (min-width: 868px) {
   .tags{
     flex-direction: row;
+  }
+
+  .tag{
+    width: auto;
+    padding: 0.8rem 1.2rem 0.8rem 1.2rem;
   }
 }
 
